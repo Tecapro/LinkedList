@@ -67,6 +67,9 @@ public class LinkedList {
         while(head!=null&&head.val>val)
             head=head.next;
 
+        if(head==null)
+            return ;
+
         tem=new Node(val,head);
 
         while(tem.next.next!=null){
